@@ -9,6 +9,6 @@ export interface AuthTokens {
 export interface AuthContextType {
     authTokens: AuthTokens | null;
     user: User | null
-    loginUser: (phoneNumber: string, password: string) => Promise<void>
+    loginUser: (phoneNumber: string, password: string) => Promise<boolean>
     logoutUser: () => void;
 }

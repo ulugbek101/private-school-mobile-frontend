@@ -3,7 +3,7 @@ import type { User } from "../models/user"
 import type { AuthTokens } from "../models/auth-context"
 
 export function getStoredAuthTokensFromLocalStorage(): AuthTokens | null {
-    const storedAuthTokens = localStorage.getItem("_eSchoolManagementSystemTokens");
+    const storedAuthTokens = localStorage.getItem("_eSchoolManagementSystemsAuthTokens");
 
     if (storedAuthTokens) {
         try {
